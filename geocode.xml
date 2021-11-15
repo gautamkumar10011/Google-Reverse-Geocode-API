@@ -1,0 +1,88 @@
+<!-- First Run Output -->
+<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>establishment</type>
+  <type>point_of_interest</type>
+  <formatted_address># 3582,13 G Main Road, 4th Cross Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India</formatted_address>
+  <address_component>
+   <long_name>4th Cross Road</long_name>
+   <short_name>4th Cross Rd</short_name>
+   <type>route</type>
+  </address_component>
+  <address_component>
+   <long_name>HAL 2nd Stage</long_name>
+   <short_name>HAL 2nd Stage</short_name>
+   <type>political</type>
+   <type>sublocality</type>
+   <type>sublocality_level_3</type>
+  </address_component>
+  <address_component>
+   <long_name>Doopanahalli</long_name>
+   <short_name>Doopanahalli</short_name>
+   <type>political</type>
+   <type>sublocality</type>
+   <type>sublocality_level_2</type>
+  </address_component>
+  <address_component>
+   <long_name>Indiranagar</long_name>
+   <short_name>Indiranagar</short_name>
+   <type>political</type>
+   <type>sublocality</type>
+   <type>sublocality_level_1</type>
+  </address_component>
+  <address_component>
+   <long_name>Bengaluru</long_name>
+   <short_name>Bengaluru</short_name>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Bangalore Urban</long_name>
+   <short_name>Bangalore Urban</short_name>
+   <type>administrative_area_level_2</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Karnataka</long_name>
+   <short_name>KA</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>India</long_name>
+   <short_name>IN</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>560008</long_name>
+   <short_name>560008</short_name>
+   <type>postal_code</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>12.9652501</lat>
+    <lng>77.6394230</lng>
+   </location>
+   <location_type>GEOMETRIC_CENTER</location_type>
+   <viewport>
+    <southwest>
+     <lat>12.9639011</lat>
+     <lng>77.6380740</lng>
+    </southwest>
+    <northeast>
+     <lat>12.9665991</lat>
+     <lng>77.6407720</lng>
+    </northeast>
+   </viewport>
+  </geometry>
+  <partial_match>true</partial_match>
+  <place_id>ChIJ92gcRxwUrjsRAIilemBdNTA</place_id>
+  <plus_code>
+   <global_code>7J4VXJ8Q+4Q</global_code>
+   <compound_code>XJ8Q+4Q Bengaluru, Karnataka, India</compound_code>
+  </plus_code>
+ </result>
+</GeocodeResponse>

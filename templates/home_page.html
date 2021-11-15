@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoLoc</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</head>
+
+<body>
+    <div style="margin-top: 50px;" class="ui container">
+       <center> <img src="{{ url_for('static' , filename='logo.png') }}"  height="125px;" width="125px"> </center>
+        <h1 class="ui center aligned header">Your GeoLocation</h1>
+        <h3 class="ui center aligned header">Enter Your Address Get Your lats</h3>
+        <form class="ui center aligned form" action="/getAddressDetails" method="post">
+            <div class="field">
+                <label>Your Address</label>
+                {% if address  %}
+                 <input type="text" name="address" value="{{address}}" ><br>
+                 {% else %}
+                 <input type="text" name="address" placeholder="Please Enter Your Address ...  " ><br>
+                 {% endif %}
+            </div>
+            <select class="custom-select" name="output_format">
+                {% if output_format  %}
+                <option selected value="{{data_format}}">{{output_format}}</option>
+                {% else %}
+                <option selected value="json">json</option>
+                {% endif %}
+                <option value="json">json</option>
+                <option value="xml">xml</option>
+              </select>
+              <br>
+            <button class="ui blue button" type="submit">Get Lats</button>
+        </form>
+        <hr>
+        {% if result %}
+        <h1 class="ui center aligned header">Your GeoLocation</h1>
+        <textarea id="latid" name="latValues" rows="20" cols="100"> {{ result }} </textarea>
+        {% endif %}
+    </div>
+</body>
+
+</html>
