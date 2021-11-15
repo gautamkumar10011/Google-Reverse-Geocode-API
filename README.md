@@ -7,3 +7,5 @@ python geolocationmain.py   # to run the project
 
 ## check the localhost/127.0.0.1:5000 port or somthing you configured over web browser ..
 
+## please ignore [geocode.json] and [geocode.xml ==> they contains 1st run response fromm the google geocode api
+
